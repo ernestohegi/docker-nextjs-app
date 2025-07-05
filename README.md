@@ -76,6 +76,12 @@ kubectl delete pod docker-nextjs-app
 kubectl port-forward deployment/docker-nextjs-app-deployment 3000:3000
 ```
 
+#### Pull image after changes
+
+```bash
+kubectl rollout restart deployment/docker-nextjs-app-deployment
+```
+
 #### Run the app
 
 ```bash

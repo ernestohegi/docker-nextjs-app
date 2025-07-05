@@ -17,6 +17,7 @@ spec:
       containers:
       - name: docker-nextjs-app
         image: ernestohegi/docker-nextjs-app:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
 
