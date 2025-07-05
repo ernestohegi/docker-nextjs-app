@@ -64,8 +64,26 @@ kubectl get deployments
 kubectl logs -l app=docker-nextjs-app
 ```
 
+#### Delete pod
+
+```bash
+kubectl delete pod docker-nextjs-app
+```
+
 #### Expose the deployment
 
 ```bash
 kubectl port-forward deployment/docker-nextjs-app-deployment 3000:3000
+```
+
+#### Run the app
+
+```bash
+kubectl run docker-nextjs-app --image=yourusername/docker-nextjs-app:latest --port=3000
+```
+
+#### Access the app locally with load balancer
+
+```bash
+minikube tunnel
 ```
