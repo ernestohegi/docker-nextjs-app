@@ -93,3 +93,9 @@ kubectl run docker-nextjs-app --image=yourusername/docker-nextjs-app:latest --po
 ```bash
 minikube tunnel
 ```
+
+#### Get IP address of the service
+
+```bash
+kubectl get svc
+```
