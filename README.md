@@ -38,7 +38,7 @@ docker run -p 3000:3000 yourusername/docker-nextjs-app:latest
 minikube start
 ```
 
-#### Commands
+#### Check the status of the Minikube cluster
 
 ```bash
 kubectl get nodes
@@ -48,8 +48,24 @@ kubectl get nodes
 kubectl get pods -A
 ```
 
+#### Create a deployment for the Next.js app
+
 ```bash
 kubectl apply -f docker-nextjs-app-deployment.yaml
 ```
 
 ```bash
+kubectl get deployments
+```
+
+#### Logs
+
+```bash
+kubectl logs -l app=docker-nextjs-app
+```
+
+#### Expose the deployment
+
+```bash
+kubectl port-forward deployment/docker-nextjs-app-deployment 3000:3000
+```

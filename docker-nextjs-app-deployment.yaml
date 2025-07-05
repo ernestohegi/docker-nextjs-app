@@ -18,5 +18,5 @@ spec:
       - name: docker-nextjs-app
         image: ernestohegi/docker-nextjs-app:latest
         ports:
-        - containerPort: 80
+        - containerPort: 3000
 
