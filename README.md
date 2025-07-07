@@ -1,4 +1,4 @@
-Simplest Next.js 15 and Docker implementation.
+Simple Next.js 15 application inside Docker on Kubernetes.
 
 ## Prerequisites
 
